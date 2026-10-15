@@ -1,0 +1,330 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* El fondo aplicado aquí aparecerá en TODAS las páginas de tu sitio web */
+ body {
+     font-family: 'Georgia', 'Times New Roman', serif;
+     background-image: url('img/fondo galeria.webp');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     color: #333333;
+     line-height: 1.6;
+     margin: 0;
+     padding: 0;
+ }
+
+ .container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ /* --- ESTILOS PARA INDEX.HTML (Página Principal / Hero) --- */
+ .header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: rgba(31, 26, 23, 0.92);
+     backdrop-filter: blur(8px);
+     z-index: 1000;
+     border-bottom: 1px solid rgba(230, 161, 92, 0.25);
+ }
+
+ .nav-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1.2rem 2rem;
+ }
+
+ .logo {
+     font-size: 1.8rem;
+     font-weight: 800;
+     color: #ffffff;
+     text-decoration: none;
+     letter-spacing: 1px;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ .logo span {
+     color: #e6a15c;
+ }
+
+ .hero-nav-links {
+     display: flex;
+     list-style: none;
+     gap: 2rem;
+ }
+
+ .hero-nav-links a {
+     color: #ffffff;
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 1rem;
+     font-family: 'Segoe UI', sans-serif;
+     transition: color 0.3s ease;
+ }
+
+ .hero-nav-links a:hover,
+ .hero-nav-links a.active {
+     color: #e6a15c;
+ }
+
+ .hero {
+     position: relative;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1920') no-repeat center center/cover;
+ }
+
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(20, 15, 12, 0.65);
+ }
+
+ .hero-content {
+     position: relative;
+     z-index: 1;
+     max-width: 850px;
+     padding: 0 1.5rem;
+ }
+
+ .hero-title {
+     font-size: 3.8rem;
+     font-weight: 900;
+     letter-spacing: 3px;
+     margin-bottom: 1rem;
+     color: #fefae0;
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ .hero-slogan {
+     font-size: 1.5rem;
+     color: #d4c5b9;
+     margin-bottom: 2.2rem;
+     font-weight: 300;
+     font-style: italic;
+ }
+
+ .btn-primary {
+     display: inline-block;
+     padding: 0.8rem 2.2rem;
+     background-color: #e6a15c;
+     color: #1f1a17;
+     font-weight: 700;
+     text-decoration: none;
+     border-radius: 25px;
+     font-family: 'Segoe UI', sans-serif;
+     transition: all 0.3s ease;
+ }
+
+ .btn-primary:hover {
+     background-color: #fefae0;
+     transform: translateY(-3px);
+ }
+
+ .footer {
+     text-align: center;
+     padding: 1.5rem;
+     background-color: #14100e;
+     color: #d4c5b9;
+     font-size: 0.9rem;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ /* --- ESTILOS PARA BLOG.HTML --- */
+ header.blog-header {
+     text-align: center;
+     padding: 30px 0 10px 0;
+
+ }
+
+ .site-title {
+     font-size: 3.5rem;
+     font-family: 'Playfair Display', 'Georgia', serif;
+     font-style: italic;
+     font-weight: 700;
+     color: #000000;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+ }
+
+ nav.blog-nav {
+     border-bottom: 1px solid #eaeaea;
+     padding-bottom: 15px;
+     margin-bottom: 30px;
+ }
+
+ .nav-links {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     list-style: none;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: #1e2b7a;
+     font-size: 0.95rem;
+     font-weight: 600;
+     text-transform: uppercase;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     padding-bottom: 5px;
+     transition: color 0.3s ease;
+ }
+
+ .nav-links a.active {
+     border-bottom: 2px solid #d9826c;
+ }
+
+ .main-image {
+     width: 100%;
+     height: auto;
+     max-height: 450px;
+     object-fit: cover;
+     display: block;
+     margin-bottom: 30px;
+     filter: grayscale(80%);
+ }
+
+ .post-title {
+     text-align: center;
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: #000000;
+     margin-bottom: 25px;
+ }
+
+ .blog-text {
+     color: black;
+     font-size: 0.98rem;
+     text-align: justify;
+     margin-bottom: 20px;
+     font-weight: bold;
+ }
+
+ .section-with-icon {
+     display: flex;
+     align-items: flex-start;
+     gap: 12px;
+     margin-bottom: 20px;
+ }
+
+ .bakery-image {
+     width: 320px;
+     height: 380px;
+     object-fit: cover;
+     flex-shrink: 0;
+     border-radius: 50px;
+ }
+
+
+ /* --- ESTILOS PARA GALERIA.HTML --- */
+ .section-title {
+     text-align: center;
+     font-size: 2rem;
+     color: #3b2f2f;
+     margin: 40px 0 20px 0;
+ }
+
+ .gallery-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px;
+     max-width: 1100px;
+     margin: 0 auto 50px auto;
+     padding: 0 20px;
+ }
+
+ .gallery-item img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .gallery-item img:hover {
+     transform: scale(1.03);
+     
+ }
+
+ /* --- REDES SOCIALES CENTRADAS --- */
+ .social-section {
+     margin-top: 50px;
+     text-align: center;
+     /* Centra el texto de "Síguenos en nuestras redes sociales" */
+     width: 100%;
+     /* Ocupa todo el ancho para que el centrado sea total */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* Centra los elementos hijos en bloque de forma perfecta */
+     padding-bottom: 40px;
+ }
+
+ .social-title {
+     color: #fefae0;
+     /* Un color claro para que resalte sobre el fondo de pan */
+     font-size: 1.1rem;
+     margin-bottom: 15px;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+     /* Sombra para que se lea bien con la foto de fondo */
+ }
+
+ .social-icons {
+     display: flex;
+     justify-content: center;
+     /* Centra los círculos entre sí */
+     gap: 15px;
+ }
+
+ .social-icons a:hover {
+     transform: scale(1.1);
+ }
+ .blog-container {
+    max-width: 950px;
+    margin: 110px auto 50px auto; /* Centra la caja y deja espacio arriba para el menú fijo */
+    background: rgba(255, 255, 255, 0.90); /* Fondo blanco semitransparente para leer con claridad */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+ }
+ /* --- ESTILOS PARA LA SECCIÓN DE VIDEOS --- */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.video-card {
+    background: #fdfbf7;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-card iframe {
+    border-radius: 8px;
+    width: 100%;
+}
+ 
